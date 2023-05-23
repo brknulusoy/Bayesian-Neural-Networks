@@ -1,9 +1,6 @@
-
 # Bayesian Neural Networks
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/JavierAntoran/Bayesian-Neural-Networks/blob/master/LICENSE) [![Python 2.7+](https://img.shields.io/badge/python-2.7+-blue.svg)](https://www.python.org/downloads/release/python-2716/)
 [![Pytorch 1.0](https://img.shields.io/badge/pytorch-1.0.1-blue.svg)](https://pytorch.org/)
-
-
 
 Pytorch implementations for the following approximate inference methods:
 
@@ -22,6 +19,7 @@ We also provide code for:
 * PyTorch
 * Numpy
 * Matplotlib
+* Wandb
 
 The project is written in python 2.7 and Pytorch 1.0.1. If CUDA is available, it will be
 used automatically. The models can also run on CPU as they are not excessively big.
@@ -318,3 +316,15 @@ Histograms of weights sampled from each model trained on MNIST. We draw 10 sampl
 ### Weight Pruning
 
 \#TODO
+
+### Wandb.AI Parameter Optimization Results
+
+The optimization was done for the following methods:
+> Bayes by Backprop
+> Monte Carlo Dropout
+> Ensemble
+
+The results for the Wandb parameter optimization with sweeps can be seen in the following project link
+> https://wandb.ai/ias_2023_s1/projects
+
+The results were similar to the results given by the original author of the repo with slight differences caused by the training time not being long enough (Computationally expensive)
